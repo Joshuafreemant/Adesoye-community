@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+.bg-image {
+	background-image: url('/public/background.jpg');
+  }
+  .bg-profile {
+	background-image: url('/public/background.jpg');
+	opacity: 0.9;
+	background-color: black;
+  }
+  
+  
+  .opacity-bg {
+	background-color: rgba(0, 0, 0, 0.5);
+  }
+  .bg-doodle {
+	background-image: url('/public/doodle.jpg');
+
+  }
+  .receiver{
+	border-radius: 10px 10px 10px 10px;
+  }
+  .sender{
+	border-radius: 10px 10px 10px 10px;
+  }
+  .react-input-emoji--container {
+    color: #fff !important;
+	background-color: transparent !important;
+	border: none !important;
+  }
+  .react-emoji-picker{
+	left:0px !important;
+  }
+  .react-emoji-picker--wrapper{
+	overflow: scroll !important;
+	width: 100% !important;
+  }
