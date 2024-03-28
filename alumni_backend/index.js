@@ -31,7 +31,9 @@ try {
 }
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' })); // Adjust the origin as needed
+const allowedOrigins = ['http://localhost:3000', 'http://195.35.14.31', 'http://acoalumni.com','https://acoalumni.com'];
+
+app.use(cors({ credentials: true, origin: allowedOrigins }));
 
 
 // let users = [];
