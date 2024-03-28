@@ -31,7 +31,7 @@ try {
 }
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors()); // Adjust the origin as needed
+app.use(cors({ credentials: true, origin: 'http://localhost:3000' })); // Adjust the origin as needed
 
 
 // let users = [];

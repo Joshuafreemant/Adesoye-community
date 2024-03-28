@@ -100,6 +100,7 @@ export const login = async (req, res) => {
       process.env.JWT_KEY
     );
     const { password, ...info } = user._doc;
+    console.log(user._doc)
     res
       .cookie("accessToken", token, {
         httpOnly: true,
@@ -108,6 +109,7 @@ export const login = async (req, res) => {
       .json(info);
   } catch (error) {
     res.status(500).json(error);
+    console.log(error)
   }
 };
 export const logout = async (req, res) => {
